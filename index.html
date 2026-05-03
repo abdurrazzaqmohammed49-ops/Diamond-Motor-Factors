@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Diamond Motor Factors — Quality Car Parts, Tools & Accessories in Dublin, Ireland."/>
+<title>Diamond Motor Factors | Quality Car Parts in Dublin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ============================================================
+   Diamond Motor Factors — Complete Website
+   Design: Industrial Precision + Metallic Edge
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0a0a0b;--dark:#111114;--dark2:#18181d;--dark3:#222228;
+  --mid:#2e2e38;--steel:#3c3c4e;--muted:#6b6b82;--subtle:#9999b0;
+  --light:#d4d4e0;--white:#f5f5f8;--pure:#ffffff;
+  --red:#e01f2e;--red-l:#ff4455;--red-d:#a8111e;--red-g:rgba(224,31,46,.25);--red-dim:rgba(224,31,46,.12);--red-dim:rgba(224,31,46,.12);
+  --silver:#c0c8d8;--gold:#f0a020;--green:#22c55e;
+  --fd:'Barlow Condensed',sans-serif;--fb:'Barlow',sans-serif;
+  --nav:72px;--max:1280px;
+  --br4:4px;--br8:8px;--br16:16px;--br24:24px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--fb);background:var(--black);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--dark)}::-webkit-scrollbar-thumb{background:var(--red-d);border-radius:3px}
+::selection{background:var(--red);color:#fff}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--fb);cursor:pointer}
+
+/* ── UTILITIES ── */
+.container{max-width:var(--max);margin:0 auto;padding:0 24px}
+.flex{display:flex}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-sm{gap:8px}.gap-md{gap:16px}.gap-lg{gap:24px}.gap-xl{gap:40px}
+.section{padding:80px 0}
+.section-dark{background:var(--dark)}
+.section-black{background:var(--black)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* Section labels */
+.stag{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--red-l);margin-bottom:14px}
+.stag::before{content:'';display:block;width:22px;height:2px;background:var(--red)}
+h1.st,h2.st{font-family:var(--fd);font-size:clamp(30px,5vw,56px);font-weight:900;line-height:1.04;letter-spacing:-.02em;color:var(--pure)}
+.sub{font-size:16px;color:var(--subtle);line-height:1.7;max-width:600px;margin-top:12px}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;font-family:var(--fd);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:none;border-radius:var(--br4);cursor:pointer;transition:all .25s ease;text-decoration:none;white-space:nowrap}
+.btn-p{background:var(--red);color:#fff}.btn-p:hover{background:var(--red-l);transform:translateY(-2px);box-shadow:0 8px 24px var(--red-g)}
+.btn-s{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.28)}.btn-s:hover{background:rgba(255,255,255,.07);transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--red-l);border:1px solid var(--red)}.btn-o:hover{background:var(--red);color:#fff;transform:translateY(-2px)}
+.btn-sm{padding:9px 18px;font-size:12px}
+
+/* ── TOPBAR ── */
+#topbar{background:var(--dark2);border-bottom:1px solid rgba(255,255,255,.06);font-size:12px;color:var(--subtle);position:sticky;top:0;z-index:200}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;height:34px}
+.tb-right{display:flex;gap:16px;align-items:center}
+.tb-sep{color:var(--steel)}
+@media(max-width:600px){.tb-right{display:none}}
+
+/* ── NAVBAR ── */
+#navbar{position:sticky;top:34px;z-index:100;background:rgba(10,10,11,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);height:var(--nav);transition:all .3s ease}
+#navbar.scrolled{background:rgba(10,10,11,.97);border-bottom-color:rgba(224,31,46,.15);box-shadow:0 4px 32px rgba(0,0,0,.4)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:40px}
+.logo{display:flex;align-items:center;gap:12px;background:none;border:none;cursor:pointer;padding:0}
+.logo-icon{width:42px;height:42px;background:var(--red);border-radius:var(--br4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;box-shadow:0 0 20px var(--red-g)}
+.logo-d{font-family:var(--fd);font-size:20px;font-weight:900;letter-spacing:.05em;color:var(--pure);line-height:1}
+.logo-s{font-family:var(--fd);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--silver)}
+.nav-links{display:flex;align-items:center;gap:4px;flex:1}
+.nav-a{background:none;border:none;cursor:pointer;padding:8px 14px;font-family:var(--fd);font-size:14px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--subtle);border-radius:var(--br4);transition:all .15s;position:relative}
+.nav-a:hover{color:var(--white);background:rgba(255,255,255,.06)}
+.nav-a.active{color:var(--red-l)}
+.nav-a.active::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:2px;background:var(--red);border-radius:1px}
+.nav-acts{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.cart-btn{position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--br4);color:var(--white);cursor:pointer;padding:10px 12px;display:flex;align-items:center;transition:all .15s}
+.cart-btn:hover{background:rgba(224,31,46,.15);border-color:var(--red);color:var(--red-l)}
+.cart-n{position:absolute;top:-6px;right:-6px;background:var(--red);color:#fff;font-size:10px;font-weight:800;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd)}
+.ham{display:none;background:none;border:none;color:var(--white);padding:8px;font-size:22px}
+
+/* Mobile menu */
+#mobile-menu{display:none;overflow:hidden;max-height:0;transition:max-height .3s ease;background:var(--dark);border-top:1px solid rgba(255,255,255,.06)}
+#mobile-menu.open{max-height:400px}
+.mob-links{padding:12px 24px 20px;display:flex;flex-direction:column;gap:4px}
+.mob-a{background:none;border:none;cursor:pointer;text-align:left;padding:12px 14px;font-family:var(--fd);font-size:16px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--subtle);border-radius:var(--br4);transition:all .15s}
+.mob-a:hover,.mob-a.active{background:rgba(224,31,46,.1);color:var(--red-l)}
+.mob-div{height:1px;background:rgba(255,255,255,.06);margin:6px 0}
+
+@media(max-width:1024px){
+  .nav-links{display:none}
+  .nav-acts .btn{display:none}
+  .ham{display:flex;align-items:center}
+  #mobile-menu{display:block}
+}
+
+/* ── PAGES ── */
+.page{display:none}.page.active{display:block}
+
+/* ── HOME: HERO ── */
+.hero{position:relative;min-height:calc(100vh - var(--nav) - 34px);display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(224,31,46,.13) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 10% 80%,rgba(224,31,46,.06) 0%,transparent 50%),linear-gradient(180deg,var(--black) 0%,var(--dark) 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 80%)}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:80px 0}
+.hero-title{font-family:var(--fd);font-size:clamp(42px,6vw,78px);font-weight:900;line-height:.98;letter-spacing:-.03em;color:var(--pure);margin:12px 0 20px}
+.hero-accent{color:var(--red-l);position:relative;display:inline-block}
+.hero-accent::after{content:'';position:absolute;bottom:4px;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),transparent);border-radius:2px}
+.hero-sub{font-size:clamp(16px,2vw,18px);color:var(--subtle);line-height:1.65;max-width:500px;margin-bottom:36px}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.hero-trust{display:flex;gap:24px;flex-wrap:wrap}
+.hti{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted)}
+.hti .ico{color:var(--red-l);font-size:15px}
+
+/* Hero visual panel */
+.hero-v{display:flex;flex-direction:column;gap:14px}
+.hero-card{background:var(--dark2);border:1px solid rgba(224,31,46,.22);border-radius:var(--br16);padding:32px;display:flex;align-items:center;gap:24px;box-shadow:0 0 40px rgba(224,31,46,.12);position:relative;overflow:hidden}
+.hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),var(--red-l),transparent)}
+.hero-card-ico{font-size:52px;flex-shrink:0}
+.hcl{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red-l);margin-bottom:4px}
+.hct{font-family:var(--fd);font-size:30px;font-weight:900;color:var(--pure);line-height:1}
+.hcs{font-size:14px;color:var(--muted);margin-top:4px}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat-box{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:14px;text-align:center;transition:border-color .15s}
+.stat-box:hover{border-color:rgba(224,31,46,.3)}
+.sv{font-family:var(--fd);font-size:22px;font-weight:900;color:var(--pure);line-height:1}
+.sl{font-size:11px;color:var(--muted);margin-top:4px}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:100px;font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.badge-b{background:rgba(224,31,46,.14);color:var(--red-l);border:1px solid rgba(224,31,46,.3)}
+.badge-g{background:rgba(240,160,32,.14);color:var(--gold);border:1px solid rgba(240,160,32,.3)}
+.badge-r{background:rgba(230,57,70,.14);color:var(--red);border:1px solid rgba(230,57,70,.3)}
+
+/* ── BRANDS BAR ── */
+.brands-bar{background:var(--dark2);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 0}
+.brands-inner{display:flex;align-items:center;gap:32px;overflow-x:auto;scrollbar-width:none}
+.brands-inner::-webkit-scrollbar{display:none}
+.bl{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;flex-shrink:0}
+.brand-chip{font-family:var(--fd);font-size:13px;font-weight:700;letter-spacing:.05em;color:var(--steel);white-space:nowrap;padding:5px 14px;background:var(--dark3);border:1px solid rgba(255,255,255,.07);border-radius:100px;transition:all .15s}
+.brand-chip:hover{color:var(--white);border-color:rgba(255,255,255,.2)}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.svc-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:32px 24px;transition:all .3s ease;position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),transparent);opacity:0;transition:opacity .3s}
+.svc-card:hover{border-color:rgba(224,31,46,.25);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.svc-card:hover::before{opacity:1}
+.svc-ico{width:52px;height:52px;background:rgba(224,31,46,.1);border:1px solid rgba(224,31,46,.2);border-radius:var(--br8);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px}
+.svc-t{font-family:var(--fd);font-size:19px;font-weight:700;color:var(--white);margin-bottom:8px}
+.svc-d{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ── CAT TILES ── */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat-tile{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;cursor:pointer;transition:all .3s ease;text-align:left;position:relative;overflow:hidden}
+.cat-tile::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform .3s ease}
+.cat-tile:hover{border-color:rgba(224,31,46,.3);background:rgba(224,31,46,.05);transform:translateY(-4px)}
+.cat-tile:hover::after{transform:scaleX(1)}
+.cat-ico{font-size:30px}
+.cat-lbl{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--white)}
+.cat-arr{color:var(--red);font-size:16px;transition:transform .15s}
+.cat-tile:hover .cat-arr{transform:translateX(4px)}
+
+/* ── PRODUCTS GRID ── */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.prod-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);overflow:hidden;display:flex;flex-direction:column;transition:all .3s ease}
+.prod-card:hover{border-color:rgba(224,31,46,.3);transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.5)}
+.prod-img{position:relative;height:160px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid rgba(255,255,255,.07)}
+.prod-ico{font-size:56px;transition:transform .3s ease;user-select:none}
+.prod-card:hover .prod-ico{transform:scale(1.1) translateY(-4px)}
+.prod-bps{position:absolute;top:10px;left:10px}
+.prod-bdis{position:absolute;top:10px;right:10px}
+.oos-overlay{position:absolute;inset:0;background:rgba(10,10,11,.72);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.prod-body{padding:16px;display:flex;flex-direction:column;flex:1;gap:6px}
+.prod-brand{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red-l)}
+.prod-name{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--white);line-height:1.2}
+.prod-desc{font-size:13px;color:var(--muted);line-height:1.55;flex:1}
+.prod-stars{display:flex;align-items:center;gap:5px;margin-top:4px}
+.stars{display:flex;gap:2px}
+.star{font-size:11px}
+.star.on{color:var(--gold)}.star.off{color:var(--steel)}
+.rv{font-family:var(--fd);font-size:13px;font-weight:700;color:var(--gold)}
+.rc{font-size:12px;color:var(--muted)}
+.prod-foot{display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.07);gap:8px}
+.pc{font-family:var(--fd);font-size:21px;font-weight:800;color:var(--pure)}
+.po{font-size:13px;color:var(--muted);text-decoration:line-through}
+
+/* ── REQUEST PART ── */
+.req-card{background:var(--dark2);border:1px solid rgba(224,31,46,.2);border-radius:var(--br24);padding:64px;position:relative;overflow:hidden}
+.req-deco{position:absolute;right:-80px;top:-80px;width:380px;height:380px;background:radial-gradient(circle,rgba(224,31,46,.12) 0%,transparent 60%);pointer-events:none}
+.req-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.req-form{display:flex;flex-direction:column;gap:16px}
+.req-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.req-success{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;text-align:center;gap:16px;background:var(--dark3);border-radius:var(--br8);border:1px solid rgba(255,255,255,.07)}
+.req-success .sico{font-size:44px}
+.req-success h3{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--pure)}
+.req-success p{font-size:14px;color:var(--muted)}
+
+/* ── TESTIMONIALS ── */
+.test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:32px}
+.test-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:28px;display:flex;flex-direction:column;gap:14px;transition:all .3s}
+.test-card:hover{border-color:rgba(224,31,46,.25);transform:translateY(-4px)}
+.tstar{display:flex;gap:3px;font-size:13px}
+.ttext{font-size:15px;color:var(--light);line-height:1.7;font-style:italic;flex:1}
+.tau{display:flex;align-items:center;gap:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07)}
+.tav{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
+.tname{font-family:var(--fd);font-size:15px;font-weight:700;color:var(--white)}
+.trole{font-size:12px;color:var(--muted)}
+.agg{display:flex;align-items:center;justify-content:center;gap:16px;padding:28px;background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8)}
+.agg-n{font-family:var(--fd);font-size:48px;font-weight:900;color:var(--pure)}
+.agg-s{font-size:20px}
+.agg-t{font-size:15px;color:var(--muted)}
+
+/* ── FAQ ── */
+.faq-layout{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start}
+.faq-hd{position:sticky;top:124px}
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);overflow:hidden;transition:border-color .15s}
+.faq-item.open{border-color:rgba(224,31,46,.3)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-size:15px;font-weight:600;color:var(--white);transition:color .15s}
+.faq-q:hover{color:var(--red-l)}
+.faq-q .faq-icon{flex-shrink:0;color:var(--red-l);font-size:18px;transition:transform .3s}
+.faq-item.open .faq-q .faq-icon{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:180px}
+.faq-a p{padding:0 20px 18px;font-size:14px;color:var(--muted);line-height:1.7}
+
+/* ── CTA STRIP ── */
+.cta-strip{background:linear-gradient(135deg,var(--red-d),var(--red));padding:72px 0;position:relative;overflow:hidden}
+.cta-strip::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px}
+.cta-inner{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+.cta-t{font-family:var(--fd);font-size:clamp(24px,4vw,36px);font-weight:800;color:#fff;margin-bottom:8px}
+.cta-s{font-size:16px;color:rgba(255,255,255,.75)}
+.cta-acts{display:flex;gap:12px;flex-wrap:wrap}
+.cta-acts .btn-p{background:#fff;color:var(--red-d)}
+.cta-acts .btn-p:hover{background:var(--white)}
+.cta-acts .btn-s{border-color:rgba(255,255,255,.45);color:#fff}
+
+/* ── PRODUCTS PAGE ── */
+.pp-hero{position:relative;padding:48px 0 32px;overflow:hidden}
+.pp-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(224,31,46,.1) 0%,transparent 60%),linear-gradient(180deg,var(--dark) 0%,var(--black) 100%)}
+.pp-bg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px}
+.pp-hi{position:relative;z-index:1}
+.pp-layout{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:24px 0 80px;align-items:start}
+.pp-sidebar{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);overflow:hidden;position:sticky;top:calc(var(--nav) + 34px + 14px)}
+.sb-hd{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.sb-t{font-family:var(--fd);font-size:15px;font-weight:700;color:var(--white)}
+.sb-close{display:none;background:none;border:none;color:var(--subtle);cursor:pointer;font-size:18px}
+.sb-sec{padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.sb-sec:last-child{border-bottom:none}
+.sb-sec-t{font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.cat-btns{display:flex;flex-direction:column;gap:2px}
+.cat-b{display:flex;align-items:center;gap:10px;width:100%;padding:8px 10px;background:none;border:none;border-radius:var(--br4);cursor:pointer;font-size:13px;color:var(--subtle);transition:all .15s;text-align:left}
+.cat-b:hover{background:rgba(255,255,255,.05);color:var(--white)}
+.cat-b.active{background:rgba(224,31,46,.12);color:var(--red-l)}
+.cat-b-ico{font-size:15px;flex-shrink:0}
+.cat-b-cnt{margin-left:auto;font-size:11px;background:var(--dark3);color:var(--muted);padding:2px 6px;border-radius:100px}
+.tgl-row{display:flex;align-items:center;gap:12px;cursor:pointer;font-size:14px;color:var(--subtle);user-select:none}
+.tgl{width:38px;height:22px;background:var(--dark3);border:1px solid rgba(255,255,255,.08);border-radius:11px;position:relative;transition:background .2s;flex-shrink:0}
+.tgl.on{background:var(--red);border-color:var(--red)}
+.tgl-th{width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;left:3px;transition:transform .2s}
+.tgl.on .tgl-th{transform:translateX(16px)}
+.pp-main{display:flex;flex-direction:column;gap:16px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.tbl{display:flex;align-items:center;gap:10px}
+.filter-btn{display:none;align-items:center;gap:8px;padding:9px 16px;background:var(--dark2);border:1px solid rgba(255,255,255,.09);border-radius:var(--br4);color:var(--white);font-family:var(--fd);font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:border-color .15s}
+.filter-btn:hover{border-color:rgba(224,31,46,.4)}
+.fa-dot{width:8px;height:8px;background:var(--red);border-radius:50%}
+.srch-wrap{position:relative;display:flex;align-items:center}
+.srch-ico{position:absolute;left:12px;color:var(--muted);font-size:15px;pointer-events:none}
+.srch{width:260px;padding:9px 38px 9px 38px;background:var(--dark2);border:1px solid rgba(255,255,255,.09);border-radius:var(--br4);color:var(--white);font-family:var(--fb);font-size:13px;outline:none;transition:all .2s}
+.srch:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(224,31,46,.18);width:300px}
+.srch::placeholder{color:var(--muted)}
+.srch-clr{position:absolute;right:10px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;display:flex;transition:color .15s}
+.srch-clr:hover{color:var(--white)}
+.tbr{display:flex;align-items:center;gap:10px}
+.rcnt{font-family:var(--fd);font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
+.sort-wrap{display:flex;align-items:center;gap:8px}
+.sort-lbl{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sort-sel-w{position:relative}
+.sort-sel{appearance:none;padding:8px 30px 8px 13px;background:var(--dark2);border:1px solid rgba(255,255,255,.09);border-radius:var(--br4);color:var(--white);font-family:var(--fb);font-size:13px;cursor:pointer;outline:none;transition:border-color .15s}
+.sort-sel:focus{border-color:var(--red)}
+.sort-arr{position:absolute;right:9px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(224,31,46,.12);border:1px solid rgba(224,31,46,.3);border-radius:100px;font-size:12px;font-weight:500;color:var(--red-l)}
+.chip button{background:none;border:none;cursor:pointer;color:var(--red-l);opacity:.7;display:flex;font-size:13px;transition:opacity .15s}
+.chip button:hover{opacity:1}
+.pg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.no-res{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px;text-align:center;gap:16px;background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br16)}
+.no-res-ico{font-size:52px;opacity:.28}
+.no-res h3{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--white)}
+.no-res p{font-size:14px;color:var(--muted)}
+
+/* ── ABOUT PAGE ── */
+.ab-hero{position:relative;padding:72px 0;overflow:hidden}
+.ab-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 30% 50%,rgba(224,31,46,.1) 0%,transparent 60%),linear-gradient(180deg,var(--dark) 0%,var(--black) 100%)}
+.ab-bg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px}
+.ab-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.ab-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ab-sc{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:22px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;transition:all .3s}
+.ab-sc:hover{border-color:rgba(224,31,46,.3);transform:translateY(-4px)}
+.ab-si{font-size:26px}
+.ab-sv{font-family:var(--fd);font-size:30px;font-weight:900;color:var(--pure);line-height:1}
+.ab-sl{font-size:13px;color:var(--muted)}
+.story-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+.story-body{display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
+.story-body p{font-size:15px;color:var(--muted);line-height:1.8}
+.checklist{display:flex;flex-direction:column;gap:10px}
+.ci{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--light)}
+.ci .cico{color:var(--green);flex-shrink:0;font-size:15px;margin-top:2px}
+.story-vis{position:sticky;top:124px}
+.sv-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br24);overflow:hidden}
+.sv-main{padding:48px 32px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(135deg,rgba(224,31,46,.08),transparent);border-bottom:1px solid rgba(255,255,255,.07);text-align:center}
+.sv-n{font-family:var(--fd);font-size:72px;font-weight:900;color:var(--pure);line-height:1}
+.sv-l{font-family:var(--fd);font-size:15px;font-weight:600;color:var(--red-l);letter-spacing:.05em;text-transform:uppercase}
+.sv-badges{display:flex;flex-direction:column}
+.sv-b{display:flex;align-items:center;gap:10px;padding:13px 20px;font-size:14px;color:var(--subtle);border-bottom:1px solid rgba(255,255,255,.07)}
+.sv-b:last-child{border-bottom:none}
+.sv-b .ico{color:var(--red-l);flex-shrink:0}
+.vals-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.val-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:28px 22px;transition:all .3s;position:relative;overflow:hidden}
+.val-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),transparent);opacity:0;transition:opacity .3s}
+.val-card:hover{border-color:rgba(224,31,46,.25);transform:translateY(-4px)}
+.val-card:hover::before{opacity:1}
+.val-ico{width:46px;height:46px;background:rgba(224,31,46,.1);border:1px solid rgba(224,31,46,.2);border-radius:var(--br4);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+.val-t{font-family:var(--fd);font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px}
+.val-d{font-size:14px;color:var(--muted);line-height:1.65}
+.tl{position:relative;display:flex;flex-direction:column;gap:24px;max-width:900px;margin:0 auto;padding:0 32px}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--red),rgba(224,31,46,.1));transform:translateX(-50%)}
+.tl-item{display:grid;grid-template-columns:1fr 24px 1fr;align-items:center}
+.tl-dot{width:14px;height:14px;background:var(--red);border-radius:50%;border:3px solid var(--dark);box-shadow:0 0 0 3px var(--red-g);z-index:1;justify-self:center}
+.tl-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:20px;transition:all .3s}
+.tl-item:nth-child(odd) .tl-card{grid-column:1;grid-row:1}
+.tl-item:nth-child(even) .tl-card{grid-column:3}
+.tl-item:nth-child(odd) .tl-dot{grid-column:2}
+.tl-item:nth-child(even) .tl-dot{grid-column:2}
+.tl-card:hover{border-color:rgba(224,31,46,.3)}
+.tl-item:nth-child(odd) .tl-card:hover{transform:translateX(-6px)}
+.tl-item:nth-child(even) .tl-card:hover{transform:translateX(6px)}
+.tl-y{font-family:var(--fd);font-size:26px;font-weight:900;color:var(--red-l);line-height:1;margin-bottom:4px}
+.tl-t{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--white);margin-bottom:6px}
+.tl-d{font-size:13px;color:var(--muted);line-height:1.6}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tm-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:28px 20px;text-align:center;transition:all .3s}
+.tm-card:hover{border-color:rgba(224,31,46,.25);transform:translateY(-4px)}
+.tm-av{width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:20px;font-weight:900;color:#fff;margin:0 auto 14px}
+.tm-n{font-family:var(--fd);font-size:18px;font-weight:700;color:var(--white);margin-bottom:4px}
+.tm-r{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--red-l);margin-bottom:12px}
+.tm-b{font-size:13px;color:var(--muted);line-height:1.65}
+.loc-card{display:grid;grid-template-columns:1fr 1.2fr;background:var(--dark2);border:1px solid rgba(224,31,46,.2);border-radius:var(--br24);overflow:hidden}
+.loc-info{padding:48px;display:flex;flex-direction:column;gap:20px}
+.loc-dets{list-style:none;display:flex;flex-direction:column;gap:10px}
+.loc-dets li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--muted);line-height:1.5}
+.loc-dets li .ico{color:var(--red-l);flex-shrink:0}
+.loc-map{height:400px;background:var(--dark3);overflow:hidden}
+.loc-map iframe{display:block}
+
+/* ── CONTACT PAGE ── */
+.con-hero{position:relative;padding:56px 0 32px;text-align:center;overflow:hidden}
+.con-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 80%,rgba(224,31,46,.1) 0%,transparent 60%),linear-gradient(180deg,var(--dark) 0%,var(--black) 100%)}
+.con-bg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px}
+.con-hi{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.con-hi .stag{justify-content:center}
+.con-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cc{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:28px 20px;display:flex;flex-direction:column;gap:10px;transition:all .3s}
+.cc:hover{border-color:rgba(224,31,46,.3);transform:translateY(-4px)}
+.cc-ico{width:46px;height:46px;background:rgba(224,31,46,.1);border:1px solid rgba(224,31,46,.2);border-radius:var(--br4);display:flex;align-items:center;justify-content:center;font-size:22px}
+.cc-t{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--white)}
+.cc-ls{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.cc-a{display:inline-flex;align-items:center;gap:5px;margin-top:5px;font-family:var(--fd);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red-l);transition:gap .15s}
+.cc-a:hover{gap:9px}
+.con-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start;padding:40px 0 80px}
+.con-form-wrap{display:flex;flex-direction:column;gap:24px}
+.cfh .st{font-size:clamp(24px,3.5vw,38px);margin:8px 0}
+.cf{display:flex;flex-direction:column;gap:14px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-grp{display:flex;flex-direction:column;gap:5px}
+.f-lbl{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--subtle)}
+.f-in,.f-sel,.f-ta{width:100%;padding:11px 14px;background:var(--dark2);border:1px solid rgba(255,255,255,.1);border-radius:var(--br4);color:var(--white);font-family:var(--fb);font-size:14px;outline:none;transition:border-color .2s}
+.f-in:focus,.f-sel:focus,.f-ta:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(224,31,46,.18)}
+.f-in::placeholder,.f-ta::placeholder{color:var(--muted)}
+.f-in.err,.f-ta.err{border-color:var(--red)}
+.f-err{font-size:11px;color:var(--red)}
+.f-sel{appearance:none}
+.sel-w{position:relative}.sel-w::after{content:'▾';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:11px}
+.f-ta{resize:vertical;min-height:120px}
+.con-success{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:40px;background:var(--dark2);border:1px solid rgba(34,197,94,.3);border-radius:var(--br16)}
+.con-sico{width:72px;height:72px;background:rgba(34,197,94,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px}
+.con-success h3{font-family:var(--fd);font-size:26px;font-weight:800;color:var(--pure)}
+.con-success p{font-size:14px;color:var(--muted);line-height:1.7;max-width:380px}
+.con-success strong{color:var(--white)}
+.con-map-wrap{position:sticky;top:calc(var(--nav) + 34px + 14px);display:flex;flex-direction:column;gap:14px}
+.con-map{height:340px;background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);overflow:hidden}
+.map-strip{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);padding:14px 18px;display:flex;gap:24px;flex-wrap:wrap}
+.ms-i{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.ms-i .ico{color:var(--red-l)}
+.trade-card{background:var(--dark2);border:1px solid rgba(224,31,46,.2);border-radius:var(--br24);padding:48px;position:relative;overflow:hidden;margin-bottom:80px}
+.trade-deco{position:absolute;left:-80px;top:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(224,31,46,.1) 0%,transparent 60%);pointer-events:none}
+.trade-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto auto;gap:48px;align-items:center}
+.trade-feats{display:flex;flex-direction:column;gap:8px}
+.tf{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--subtle);white-space:nowrap}
+.tf .ico{color:var(--green)}
+
+/* ── CART DRAWER ── */
+#cart-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:990;opacity:0;pointer-events:none;transition:opacity .3s}
+#cart-backdrop.open{opacity:1;pointer-events:all}
+#cart-drawer{position:fixed;top:0;right:0;bottom:0;width:400px;max-width:100vw;background:var(--dark);border-left:1px solid rgba(255,255,255,.07);z-index:1000;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .45s ease}
+#cart-drawer.open{transform:translateX(0);box-shadow:-24px 0 64px rgba(0,0,0,.5)}
+.cd-hd{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.07);flex-shrink:0}
+.cd-ht{display:flex;align-items:center;gap:10px;font-family:var(--fd);font-size:17px;font-weight:700;color:var(--white)}
+.cd-cnt{font-size:11px;font-weight:600;background:var(--red);color:#fff;padding:2px 8px;border-radius:100px}
+.cd-close{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:var(--br4);color:var(--white);cursor:pointer;padding:7px;display:flex;transition:background .15s;font-size:18px}
+.cd-close:hover{background:rgba(255,255,255,.12)}
+.cd-items{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.cd-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:14px;text-align:center}
+.cd-eit{font-size:56px;opacity:.28}
+.cd-empty p{color:var(--muted)}
+.cd-item{display:flex;gap:12px;padding:12px;background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:var(--br8);transition:border-color .15s}
+.cd-item:hover{border-color:rgba(224,31,46,.2)}
+.cd-iimg{width:60px;height:60px;border-radius:var(--br4);display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.cd-iinfo{flex:1;min-width:0}
+.cd-ibrand{font-family:var(--fd);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red-l);margin-bottom:2px}
+.cd-iname{font-family:var(--fd);font-size:14px;font-weight:600;color:var(--white);line-height:1.2;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-iprice{font-family:var(--fd);font-size:15px;font-weight:800;color:var(--white);margin-bottom:7px}
+.cd-ctrl{display:flex;align-items:center;gap:7px}
+.qty-b{width:24px;height:24px;background:var(--dark3);border:1px solid rgba(255,255,255,.08);border-radius:4px;color:var(--white);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all .15s}
+.qty-b:hover{background:var(--red);border-color:var(--red)}
+.qv{font-family:var(--fd);font-size:14px;font-weight:700;color:var(--white);min-width:18px;text-align:center}
+.cd-rm{margin-left:auto;background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;font-size:14px;transition:color .15s}
+.cd-rm:hover{color:var(--red)}
+.cd-ft{padding:18px 22px;border-top:1px solid rgba(255,255,255,.07);flex-shrink:0;display:flex;flex-direction:column;gap:12px}
+.cd-sub{display:flex;justify-content:space-between;align-items:center;font-family:var(--fd);font-size:15px;font-weight:600;color:var(--white)}
+.cd-tot{font-size:21px;font-weight:800}
+.cd-note{font-size:11px;color:var(--muted)}
+.cd-co{width:100%;justify-content:center;font-size:14px;padding:15px}
+.cd-cont{background:none;border:none;color:var(--subtle);font-size:12px;cursor:pointer;text-align:center;text-decoration:underline;text-decoration-color:transparent;transition:all .15s}
+.cd-cont:hover{color:var(--white);text-decoration-color:var(--white)}
+
+/* ── TOAST ── */
+#toast-container{position:fixed;bottom:22px;right:22px;z-index:10000;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast{padding:13px 18px;border-radius:var(--br8);background:var(--dark2);border:1px solid rgba(255,255,255,.1);color:var(--white);font-size:14px;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.5);display:flex;align-items:center;gap:10px;max-width:320px;animation:fadeUp .3s ease forwards}
+.toast-s{border-left:3px solid var(--green)}
+.toast-e{border-left:3px solid var(--red)}
+.toast-i{border-left:3px solid var(--red)}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);margin-top:0}
+.ft-top{padding:64px 0 48px}
+.ft-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.5fr;gap:48px}
+.ft-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.ft-logo-ico{width:40px;height:40px;background:var(--red);border-radius:var(--br4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px}
+.ft-logo-n{font-family:var(--fd);font-size:17px;font-weight:900;color:var(--pure);line-height:1}
+.ft-logo-s{font-family:var(--fd);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--silver)}
+.ft-tag{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.ft-social{display:flex;gap:8px}
+.soc-b{width:34px;height:34px;border-radius:var(--br4);background:var(--dark2);border:1px solid rgba(255,255,255,.07);color:var(--subtle);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;transition:all .15s}
+.soc-b:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
+.ft-h{font-family:var(--fd);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--subtle);margin-bottom:16px}
+.ft-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.ft-lnk{background:none;border:none;cursor:pointer;text-align:left;font-size:14px;color:var(--muted);padding:2px 0;transition:color .15s}
+.ft-lnk:hover{color:var(--white)}
+.ft-con{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-con li{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);line-height:1.5}
+.ft-con li .ico{color:var(--red-l);flex-shrink:0}
+.ft-con a{color:var(--muted);text-decoration:none;transition:color .15s}
+.ft-con a:hover{color:var(--red-l)}
+.nws-d{font-size:13px;color:var(--muted);margin-bottom:10px}
+.nws-f{display:flex;gap:8px}
+.nws-i{flex:1;padding:10px 13px;background:var(--dark2);border:1px solid rgba(255,255,255,.09);border-radius:var(--br4);color:var(--white);font-family:var(--fb);font-size:13px;outline:none;transition:border-color .2s}
+.nws-i:focus{border-color:var(--red)}
+.nws-i::placeholder{color:var(--muted)}
+.nws-b{padding:10px 14px;background:var(--red);color:#fff;border:none;border-radius:var(--br4);font-family:var(--fd);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .15s}
+.nws-b:hover{background:var(--red-l)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.06);padding:18px 0}
+.ft-bi{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.ft-copy{font-size:12px;color:var(--steel)}
+.ft-legal{display:flex;gap:24px}
+.ft-legal a{font-size:12px;color:var(--steel);text-decoration:none;transition:color .15s}
+.ft-legal a:hover{color:var(--subtle)}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.fade-up{opacity:0;animation:fadeUp .55s ease forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
+
+/* ── FORMS (shared) ── */
+.sb-clear{width:calc(100% - 36px);justify-content:center;margin:14px 18px}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  .prod-grid{grid-template-columns:repeat(3,1fr)}
+  .cat-grid{grid-template-columns:repeat(4,1fr)}
+  .trade-inner{grid-template-columns:1fr}
+}
+@media(max-width:1100px){
+  .vals-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .pg-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;padding:48px 0}
+  .hero-v{display:none}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .req-inner{grid-template-columns:1fr}
+  .faq-layout{grid-template-columns:1fr}
+  .faq-hd{position:static}
+  .test-grid{grid-template-columns:1fr}
+  .ab-inner{grid-template-columns:1fr}
+  .ab-stats{grid-template-columns:repeat(4,1fr)}
+  .story-layout{grid-template-columns:1fr}
+  .story-vis{position:static}
+  .loc-card{grid-template-columns:1fr}
+  .loc-map{height:280px}
+  .pp-layout{grid-template-columns:1fr}
+  .pp-sidebar{position:fixed;top:0;left:0;bottom:0;width:280px;z-index:500;transform:translateX(-100%);transition:transform .35s ease;border-radius:0;overflow-y:auto}
+  .pp-sidebar.open{transform:translateX(0);box-shadow:var(--shadow-lg)}
+  .sb-close{display:flex}
+  .filter-btn{display:flex}
+  .srch{width:200px}
+  .srch:focus{width:240px}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .con-layout{grid-template-columns:1fr;padding-top:0}
+  .con-map-wrap{position:static}
+  .con-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .hero-title{font-size:42px}
+  .tl{padding:0}
+  .tl-line{left:14px}
+  .tl-item{grid-template-columns:24px 1fr}
+  .tl-item:nth-child(odd) .tl-card,.tl-item:nth-child(even) .tl-card{grid-column:2}
+  .tl-item:nth-child(odd) .tl-dot,.tl-item:nth-child(even) .tl-dot{grid-column:1}
+  .tl-item:nth-child(odd) .tl-card:hover,.tl-item:nth-child(even) .tl-card:hover{transform:translateX(4px)}
+}
+@media(max-width:640px){
+  .svc-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .prod-grid{grid-template-columns:1fr}
+  .pg-grid{grid-template-columns:1fr}
+  .vals-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .ab-stats{grid-template-columns:repeat(2,1fr)}
+  .req-fields{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+  .agg{flex-direction:column;text-align:center}
+  .con-cards{grid-template-columns:1fr}
+  .f-row{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr}
+  .nws-f{flex-direction:column}
+  .ft-bi{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NOISE OVERLAY ── -->
+<div style="position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.022;background-image:url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")" aria-hidden="true"></div>
+
+<!-- ── TOPBAR ── -->
+<div id="topbar">
+  <div class="container topbar-inner">
+    <div class="flex items-center gap-sm" style="font-size:12px">📞 +353 1 555 0123 &nbsp;·&nbsp; Mon–Sat 8am–6pm</div>
+    <div class="tb-right">
+      <span>📦 Free delivery over €75</span>
+      <span class="tb-sep">·</span>
+      <span>🛡️ 2-Year Warranty</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── NAVBAR ── -->
+<header id="navbar">
+  <div class="container nav-inner">
+    <button class="logo" onclick="navigate('home')" aria-label="Diamond Motor Factors home">
+      <div class="logo-icon">🔧</div>
+      <div>
+        <div class="logo-d">Diamond</div>
+        <div class="logo-s">Motor Factors</div>
+      </div>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <button class="nav-a active" id="nl-home" onclick="navigate('home')">Home</button>
+      <button class="nav-a" id="nl-products" onclick="navigate('products')">Products</button>
+      <button class="nav-a" id="nl-about" onclick="navigate('about')">About</button>
+      <button class="nav-a" id="nl-contact" onclick="navigate('contact')">Contact</button>
+    </nav>
+    <div class="nav-acts">
+      <button class="btn btn-o btn-sm" onclick="navigate('contact')">Request a Part</button>
+      <button class="cart-btn" id="cart-toggle" aria-label="Shopping cart">
+        🛒 <span class="cart-n" id="cart-count" style="display:none">0</span>
+      </button>
+      <button class="ham" id="ham-btn" onclick="toggleMobile()" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  <div id="mobile-menu">
+    <div class="mob-links">
+      <button class="mob-a active" id="ml-home" onclick="navigate('home')">Home</button>
+      <button class="mob-a" id="ml-products" onclick="navigate('products')">Products</button>
+      <button class="mob-a" id="ml-about" onclick="navigate('about')">About</button>
+      <button class="mob-a" id="ml-contact" onclick="navigate('contact')">Contact</button>
+      <div class="mob-div"></div>
+      <button class="btn btn-p btn-sm" onclick="navigate('contact')">Request a Part</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ════════════════════════════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container hero-inner">
+      <div>
+        <div class="stag fade-up">Dublin's #1 Motor Factors Since 2005</div>
+        <h1 class="hero-title fade-up d1">
+          Quality Car Parts<br>
+          <span class="hero-accent">You Can Trust</span><br>
+          in Dublin
+        </h1>
+        <p class="hero-sub fade-up d2">Serving Dublin's drivers and mechanics for 20+ years. Massive stock, expert advice, fast delivery. Guaranteed quality.</p>
+        <div class="hero-acts fade-up d3">
+          <button class="btn btn-p" onclick="navigate('products')" style="padding:15px 30px;font-size:15px">Shop Now →</button>
+          <button class="btn btn-s" onclick="navigate('contact')" style="padding:15px 30px;font-size:15px">Contact Us</button>
+        </div>
+        <div class="hero-trust fade-up d4">
+          <div class="hti"><span class="ico">🛡️</span> 2-Year Warranty</div>
+          <div class="hti"><span class="ico">🚚</span> Same-Day Dublin</div>
+          <div class="hti"><span class="ico">⭐</span> OE Quality Parts</div>
+        </div>
+      </div>
+      <div class="hero-v">
+        <div class="hero-card">
+          <div class="hero-card-ico">⚙️</div>
+          <div>
+            <div class="hcl">In Stock Now</div>
+            <div class="hct">50,000+ Parts</div>
+            <div class="hcs">Ready for immediate dispatch</div>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="stat-box"><div class="sv">20+</div><div class="sl">Years in Dublin</div></div>
+          <div class="stat-box"><div class="sv">50K+</div><div class="sl">Parts in Stock</div></div>
+          <div class="stat-box"><div class="sv">15K+</div><div class="sl">Customers</div></div>
+          <div class="stat-box"><div class="sv">4.9★</div><div class="sl">Google Rating</div></div>
+        </div>
+        <div class="badge-row">
+          <span class="badge badge-b">🚀 Same-Day Delivery</span>
+          <span class="badge badge-g">⭐ 4.9 Google Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <div class="brands-bar">
+    <div class="container brands-inner">
+      <span class="bl">Stocking leading brands</span>
+      <div style="display:flex;gap:10px">
+        <span class="brand-chip">Bosch</span><span class="brand-chip">NGK</span><span class="brand-chip">Gates</span>
+        <span class="brand-chip">Brembo</span><span class="brand-chip">Mobil 1</span><span class="brand-chip">Valeo</span>
+        <span class="brand-chip">Monroe</span><span class="brand-chip">Castrol</span><span class="brand-chip">Mann</span>
+        <span class="brand-chip">Varta</span><span class="brand-chip">TRW</span><span class="brand-chip">Lemförder</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="max-width:600px;margin-bottom:48px">
+        <div class="stag">Why Choose Us</div>
+        <h2 class="st">Everything You Need,<br>All Under One Roof</h2>
+        <p class="sub">From engine parts to diagnostic tools, Diamond Motor Factors is Dublin's most complete automotive parts supplier.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card"><div class="svc-ico">📦</div><h3 class="svc-t">Huge Stock</h3><p class="svc-d">Over 50,000 parts in stock. If we don't have it, we can source it fast from our supplier network.</p></div>
+        <div class="svc-card"><div class="svc-ico">🚚</div><h3 class="svc-t">Fast Delivery</h3><p class="svc-d">Same-day delivery across Dublin on orders placed before 2pm. Next-day nationwide.</p></div>
+        <div class="svc-card"><div class="svc-ico">🛡️</div><h3 class="svc-t">2-Year Warranty</h3><p class="svc-d">All parts come with a minimum 2-year warranty. Quality you can rely on, guaranteed.</p></div>
+        <div class="svc-card"><div class="svc-ico">🔧</div><h3 class="svc-t">Expert Advice</h3><p class="svc-d">Our trained motor factors advisors help you find the right part for your vehicle every time.</p></div>
+        <div class="svc-card"><div class="svc-ico">⚡</div><h3 class="svc-t">Trade Accounts</h3><p class="svc-d">Dedicated trade pricing and accounts for garages and mechanics. Apply in minutes.</p></div>
+        <div class="svc-card"><div class="svc-ico">🕐</div><h3 class="svc-t">Extended Hours</h3><p class="svc-d">Open Monday–Saturday 8am to 6pm. Emergency parts line available after hours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section section-black">
+    <div class="container">
+      <div style="max-width:600px;margin-bottom:48px">
+        <div class="stag">Browse by Category</div>
+        <h2 class="st">Find What You Need, Fast</h2>
+      </div>
+      <div class="cat-grid">
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">⚙️</span><span class="cat-lbl">Engine Parts</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">🛑</span><span class="cat-lbl">Brakes & Pads</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">🛢️</span><span class="cat-lbl">Oils & Fluids</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">⚡</span><span class="cat-lbl">Electrical</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">🔨</span><span class="cat-lbl">Tools</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">🚗</span><span class="cat-lbl">Accessories</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">🔩</span><span class="cat-lbl">Suspension</span><span class="cat-arr">→</span></button>
+        <button class="cat-tile" onclick="navigate('products')"><span class="cat-ico">💨</span><span class="cat-lbl">Exhaust</span><span class="cat-arr">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:14px">
+        <div>
+          <div class="stag">Top Sellers</div>
+          <h2 class="st">Featured Products</h2>
+        </div>
+        <button class="btn btn-o btn-sm" onclick="navigate('products')">View All →</button>
+      </div>
+      <div class="prod-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
+  <!-- REQUEST A PART -->
+  <section class="section section-black">
+    <div class="container">
+      <div class="req-card">
+        <div class="req-deco"></div>
+        <div class="req-inner">
+          <div>
+            <div class="stag">Can't Find Your Part?</div>
+            <h2 class="st" style="font-size:clamp(26px,4vw,44px);margin:10px 0 14px">Request Any Part — We'll Source It</h2>
+            <p class="sub" style="font-size:15px">Fill in your details and we'll track down your part from our supplier network, usually within 24–48 hours.</p>
+          </div>
+          <div id="req-form-wrap">
+            <form class="req-form" id="req-form" onsubmit="submitReqForm(event)">
+              <div class="req-fields">
+                <div class="f-grp"><label class="f-lbl">Vehicle Reg / Year</label><input class="f-in" placeholder="e.g. 181-D-12345 or 2018 Ford Focus" required></div>
+                <div class="f-grp"><label class="f-lbl">Part Required</label><input class="f-in" placeholder="e.g. Front brake pads..." required></div>
+                <div class="f-grp"><label class="f-lbl">Your Name</label><input class="f-in" placeholder="Full name" required></div>
+                <div class="f-grp"><label class="f-lbl">Phone Number</label><input class="f-in" type="tel" placeholder="+353 ..." required></div>
+              </div>
+              <button type="submit" class="btn btn-p">Submit Request →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="max-width:600px;margin-bottom:48px">
+        <div class="stag">Customer Reviews</div>
+        <h2 class="st">Trusted Across Dublin</h2>
+        <p class="sub">Thousands of mechanics, garages, and private customers rely on us every day.</p>
+      </div>
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="tstar">⭐⭐⭐⭐⭐</div>
+          <blockquote class="ttext">"Diamond Motor Factors have been supplying our garage for over 10 years. The quality of parts and speed of delivery is second to none in Dublin. Wouldn't go anywhere else."</blockquote>
+          <div class="tau"><div class="tav" style="background:#e01f2e">SM</div><div><div class="tname">Sean Murphy</div><div class="trole">Owner, Murphy's Garage, Tallaght</div></div></div>
+        </div>
+        <div class="test-card">
+          <div class="tstar">⭐⭐⭐⭐⭐</div>
+          <blockquote class="ttext">"Needed a timing belt kit urgently — they had it in stock and delivered within 2 hours. Incredibly helpful staff. Found the exact part I needed at a great price."</blockquote>
+          <div class="tau"><div class="tav" style="background:#a8111e">AK</div><div><div class="tname">Aoife Kelly</div><div class="trole">Private Customer, Clondalkin</div></div></div>
+        </div>
+        <div class="test-card">
+          <div class="tstar">⭐⭐⭐⭐⭐</div>
+          <blockquote class="ttext">"We maintain 40+ vehicles and Diamond Motor Factors handle all our parts. Their trade account system is seamless and the team always goes the extra mile."</blockquote>
+          <div class="tau"><div class="tav" style="background:#7f1d1d">CW</div><div><div class="tname">Ciarán Walsh</div><div class="trole">Fleet Manager, Dublin Logistics Ltd</div></div></div>
+        </div>
+        <div class="test-card">
+          <div class="tstar">⭐⭐⭐⭐⭐</div>
+          <blockquote class="ttext">"The OBD scanner I bought has transformed how we diagnose vehicles. Great range of professional tools at competitive prices. Fast, reliable service every time."</blockquote>
+          <div class="tau"><div class="tav" style="background:#991b1b">PB</div><div><div class="tname">Patricia Brennan</div><div class="trole">Service Manager, Brennan Motors, Blanchardstown</div></div></div>
+        </div>
+      </div>
+      <div class="agg" style="margin-top:20px">
+        <div class="agg-n">4.9</div>
+        <div class="agg-s">⭐⭐⭐⭐⭐</div>
+        <div class="agg-t">Based on 1,200+ Google Reviews</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-black">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-hd">
+          <div class="stag">Got Questions?</div>
+          <h2 class="st">Frequently Asked Questions</h2>
+          <p class="sub">Can't find your answer? Give us a call or drop us a message.</p>
+          <button class="btn btn-o" onclick="navigate('contact')" style="margin-top:22px">Contact Us →</button>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip">
+    <div class="container cta-inner">
+      <div><div class="cta-t">Ready to Order? We're Here to Help.</div><div class="cta-s">Call us, visit us, or order online. Open Mon–Sat 8am–6pm.</div></div>
+      <div class="cta-acts">
+        <button class="btn btn-p" onclick="navigate('products')">Shop Now →</button>
+        <button class="btn btn-s" onclick="navigate('contact')">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     PRODUCTS PAGE
+════════════════════════════════════════════════════════════ -->
+<div id="page-products" class="page">
+  <div class="pp-hero">
+    <div class="pp-bg"></div>
+    <div class="container pp-hi">
+      <div class="stag">Parts & Accessories</div>
+      <h1 class="st">Browse All Products</h1>
+      <p class="sub">50,000+ parts in stock. Quality brands, fast delivery, expert advice.</p>
+    </div>
+  </div>
+
+  <!-- Sidebar backdrop -->
+  <div id="sb-backdrop" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:490;backdrop-filter:blur(3px)" onclick="closeSidebar()"></div>
+
+  <div class="container pp-layout">
+    <!-- Sidebar -->
+    <aside class="pp-sidebar" id="pp-sidebar">
+      <div class="sb-hd">
+        <span class="sb-t">Filters</span>
+        <button class="sb-close" onclick="closeSidebar()">✕</button>
+      </div>
+      <div class="sb-sec">
+        <div class="sb-sec-t">Category</div>
+        <div class="cat-btns" id="cat-btns"></div>
+      </div>
+      <div class="sb-sec">
+        <div class="sb-sec-t">Availability</div>
+        <div class="tgl-row" onclick="toggleInStock()">
+          <div class="tgl" id="stock-tgl"><div class="tgl-th"></div></div>
+          <span>In Stock Only</span>
+        </div>
+      </div>
+      <button class="btn btn-o btn-sm sb-clear" id="sb-clear-btn" onclick="clearFilters()" style="display:none">✕ Clear Filters</button>
+    </aside>
+
+    <!-- Main -->
+    <div class="pp-main">
+      <div class="toolbar">
+        <div class="tbl">
+          <button class="filter-btn" onclick="openSidebar()">
+            <span>⚙</span> <span>Filters</span>
+            <span class="fa-dot" id="fa-dot" style="display:none"></span>
+          </button>
+          <div class="srch-wrap">
+            <span class="srch-ico">🔍</span>
+            <input class="srch" id="search-input" type="search" placeholder="Search parts, brands..." oninput="filterProducts()" aria-label="Search products">
+            <button class="srch-clr" id="srch-clr" onclick="clearSearch()" style="display:none">✕</button>
+          </div>
+        </div>
+        <div class="tbr">
+          <span class="rcnt" id="result-count">24 results</span>
+          <div class="sort-wrap">
+            <span class="sort-lbl">Sort:</span>
+            <div class="sort-sel-w">
+              <select class="sort-sel" id="sort-sel" onchange="filterProducts()">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Top Rated</option>
+                <option value="name">A–Z</option>
+              </select>
+              <span class="sort-arr">▾</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="pg-grid" id="products-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     ABOUT PAGE
+════════════════════════════════════════════════════════════ -->
+<div id="page-about" class="page">
+  <section class="ab-hero">
+    <div class="ab-bg"></div>
+    <div class="container ab-inner">
+      <div>
+        <div class="stag">About Diamond Motor Factors</div>
+        <h1 class="st" style="margin:12px 0 18px">Dublin's Trusted<br>Motor Factors Since 2005</h1>
+        <p style="font-size:17px;color:var(--subtle);line-height:1.7;max-width:520px;margin-bottom:28px">We're a family-run business built on a simple promise: quality parts, honest advice, and service you can rely on. Twenty years later, that promise hasn't changed.</p>
+        <div class="flex gap-md" style="flex-wrap:wrap">
+          <button class="btn btn-p" onclick="navigate('contact')">Get In Touch →</button>
+          <button class="btn btn-s" onclick="navigate('products')">View Products</button>
+        </div>
+      </div>
+      <div class="ab-stats">
+        <div class="ab-sc"><span class="ab-si">📅</span><span class="ab-sv">20+</span><span class="ab-sl">Years Trading</span></div>
+        <div class="ab-sc"><span class="ab-si">📦</span><span class="ab-sv">50K+</span><span class="ab-sl">Parts in Stock</span></div>
+        <div class="ab-sc"><span class="ab-si">🤝</span><span class="ab-sv">200+</span><span class="ab-sl">Trade Partners</span></div>
+        <div class="ab-sc"><span class="ab-si">⭐</span><span class="ab-sv">15K+</span><span class="ab-sl">Customers Served</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="section section-dark">
+    <div class="container story-layout">
+      <div>
+        <div class="stag">Our Story</div>
+        <h2 class="st" style="margin:12px 0 28px">Built on a Passion<br>for the Motor Trade</h2>
+        <div class="story-body">
+          <p>Diamond Motor Factors was founded in 2005 by Declan Diamond, a Dublin native with over a decade of experience in automotive engineering and the parts trade. Frustrated by poor service and overpriced parts from large chains, Declan set out to create something different.</p>
+          <p>Starting from a small unit in Dublin 12 with a team of three, Diamond Motor Factors quickly earned a reputation for stocking hard-to-find parts, offering genuine expert advice, and treating every customer with respect — whether a sole trader mechanic or a large fleet operator.</p>
+          <p>Today, we operate from a 15,000 sq ft facility at Parkwest Industrial Estate, employ 22 specialists, and maintain relationships with over 300 parts suppliers worldwide. We're proud to still be independently owned, still answering the phone with honesty and expertise.</p>
+        </div>
+        <div class="checklist">
+          <div class="ci"><span class="cico">✅</span><span>Family-run and independently owned since 2005</span></div>
+          <div class="ci"><span class="cico">✅</span><span>Dedicated trade accounts with 200+ Dublin garages</span></div>
+          <div class="ci"><span class="cico">✅</span><span>Same-day delivery across the greater Dublin area</span></div>
+          <div class="ci"><span class="cico">✅</span><span>All parts backed by minimum 2-year warranty</span></div>
+          <div class="ci"><span class="cico">✅</span><span>Specialist parts sourcing — if we don't have it, we'll find it</span></div>
+        </div>
+      </div>
+      <div class="story-vis">
+        <div class="sv-card">
+          <div class="sv-main">
+            <div style="font-size:52px;opacity:.5">🔧</div>
+            <div class="sv-n">20</div>
+            <div class="sv-l">Years of Expertise</div>
+          </div>
+          <div class="sv-badges">
+            <div class="sv-b"><span class="ico">🏆</span> ISO 9001 Certified</div>
+            <div class="sv-b"><span class="ico">📍</span> Dublin 12, Ireland</div>
+            <div class="sv-b"><span class="ico">🕐</span> Mon–Sat 8am–6pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section section-black">
+    <div class="container">
+      <div style="max-width:600px;margin-bottom:48px">
+        <div class="stag">What We Stand For</div>
+        <h2 class="st">Our Core Values</h2>
+        <p class="sub">Four principles guide everything we do, every single day.</p>
+      </div>
+      <div class="vals-grid">
+        <div class="val-card"><div class="val-ico">🛡️</div><h3 class="val-t">Quality Guaranteed</h3><p class="val-d">We only stock parts from trusted manufacturers. Every part carries a minimum 2-year warranty.</p></div>
+        <div class="val-card"><div class="val-ico">👥</div><h3 class="val-t">Customer First</h3><p class="val-d">We treat every customer — trade or retail — with the same care and expertise. Your success is our success.</p></div>
+        <div class="val-card"><div class="val-ico">🏆</div><h3 class="val-t">Expert Knowledge</h3><p class="val-d">Our team has decades of combined experience in the motor trade. We know parts inside and out.</p></div>
+        <div class="val-card"><div class="val-ico">🚚</div><h3 class="val-t">Reliable Service</h3><p class="val-d">Fast, dependable delivery and fulfilment. We understand that when you need a part, you need it now.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:56px">
+        <div class="stag" style="justify-content:center">Our Journey</div>
+        <h2 class="st">20 Years in the Making</h2>
+      </div>
+      <div class="tl">
+        <div class="tl-line"></div>
+        <div class="tl-item"><div class="tl-card"><div class="tl-y">2005</div><h3 class="tl-t">Founded in Dublin</h3><p class="tl-d">Diamond Motor Factors opened its doors in Dublin 12, serving local garages and drivers with quality parts at fair prices.</p></div><div class="tl-dot"></div><div></div></div>
+        <div class="tl-item"><div></div><div class="tl-dot"></div><div class="tl-card"><div class="tl-y">2009</div><h3 class="tl-t">Trade Division Launched</h3><p class="tl-d">Launched our dedicated trade division, partnering with over 100 garages across greater Dublin with preferential pricing.</p></div></div>
+        <div class="tl-item"><div class="tl-card"><div class="tl-y">2013</div><h3 class="tl-t">Warehouse Expansion</h3><p class="tl-d">Moved to our current 15,000 sq ft facility at Parkwest Industrial Estate, tripling stock capacity to 30,000+ parts.</p></div><div class="tl-dot"></div><div></div></div>
+        <div class="tl-item"><div></div><div class="tl-dot"></div><div class="tl-card"><div class="tl-y">2018</div><h3 class="tl-t">Online Platform Launched</h3><p class="tl-d">Launched our online ordering system, enabling customers to order 24/7 with same-day dispatch.</p></div></div>
+        <div class="tl-item"><div class="tl-card"><div class="tl-y">2022</div><h3 class="tl-t">50,000 Parts Milestone</h3><p class="tl-d">Reached 50,000 parts in stock and expanded supplier network to cover all major European and Asian vehicle brands.</p></div><div class="tl-dot"></div><div></div></div>
+        <div class="tl-item"><div></div><div class="tl-dot"></div><div class="tl-card"><div class="tl-y">2025</div><h3 class="tl-t">Celebrating 20 Years</h3><p class="tl-d">Celebrating two decades of serving Dublin's drivers and mechanics — still family-run, still dedicated to quality.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-black">
+    <div class="container">
+      <div style="max-width:600px;margin-bottom:48px">
+        <div class="stag">The People Behind Diamond</div>
+        <h2 class="st">Meet Our Team</h2>
+        <p class="sub">Decades of combined experience in the motor trade, all under one roof.</p>
+      </div>
+      <div class="team-grid">
+        <div class="tm-card"><div class="tm-av" style="background:linear-gradient(135deg,#e01f2e,#e01f2e88)">DD</div><h3 class="tm-n">Declan Diamond</h3><div class="tm-r">Founder & MD</div><p class="tm-b">30+ years in the motor trade. Founded Diamond Motor Factors with a mission: quality parts, expert advice, fair prices.</p></div>
+        <div class="tm-card"><div class="tm-av" style="background:linear-gradient(135deg,#a8111e,#a8111e88)">SO</div><h3 class="tm-n">Sinéad O'Brien</h3><div class="tm-r">Head of Trade Accounts</div><p class="tm-b">Manages relationships with 200+ trade customers across Dublin. Known for going above and beyond to source hard-to-find parts.</p></div>
+        <div class="tm-card"><div class="tm-av" style="background:linear-gradient(135deg,#064e3b,#064e3b88)">PK</div><h3 class="tm-n">Padraig Keane</h3><div class="tm-r">Senior Parts Advisor</div><p class="tm-b">15 years identifying the right part for any vehicle. Specialist in European cars and commercial vehicles.</p></div>
+        <div class="tm-card"><div class="tm-av" style="background:linear-gradient(135deg,#4c1d95,#4c1d9588)">LF</div><h3 class="tm-n">Laura Forde</h3><div class="tm-r">Logistics Manager</div><p class="tm-b">Oversees same-day delivery operations across Dublin. Every order reaches customers on time, every time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="loc-card">
+        <div class="loc-info">
+          <div class="stag">Find Us</div>
+          <h2 class="st" style="font-size:clamp(26px,4vw,40px)">Visit Our Dublin Warehouse</h2>
+          <p style="font-size:15px;color:var(--subtle);line-height:1.7">Walk-ins always welcome. Our team is on hand Monday to Saturday to help you find the right part.</p>
+          <ul class="loc-dets">
+            <li><span class="ico">📍</span> Unit 7, Parkwest Industrial Estate, Dublin 12, D12 P123</li>
+            <li><span class="ico">🕐</span> Mon–Fri: 8am–6pm · Sat: 9am–4pm</li>
+            <li><span class="ico">📞</span> +353 1 555 0123</li>
+            <li><span class="ico">✉️</span> info@diamondmotorfactors.ie</li>
+          </ul>
+          <button class="btn btn-p" onclick="navigate('contact')">Get Directions →</button>
+        </div>
+        <div class="loc-map">
+          <iframe title="Diamond Motor Factors Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.928!2d-6.3697!3d53.3367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sParkwest+Industrial+Estate!5e0!3m2!1sen!2sie!4v1" width="100%" height="100%" style="border:0;filter:invert(90%) hue-rotate(180deg)" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <div class="container cta-inner">
+      <div><div class="cta-t">Ready to Work Together?</div><div class="cta-s">Browse our full range or get in touch to open a trade account.</div></div>
+      <div class="cta-acts">
+        <button class="btn btn-p" onclick="navigate('products')">Browse Products →</button>
+        <button class="btn btn-s" onclick="navigate('contact')">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <section class="con-hero">
+    <div class="con-bg"></div>
+    <div class="container con-hi">
+      <div class="stag">Get In Touch</div>
+      <h1 class="st" style="margin:12px 0 14px">We're Here to Help</h1>
+      <p style="font-size:17px;color:var(--subtle);line-height:1.7;max-width:500px">Have a question, need a part, or want to open a trade account? Our team is ready to help — Monday to Saturday.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="con-cards">
+        <div class="cc"><div class="cc-ico">📍</div><h3 class="cc-t">Our Location</h3><div class="cc-ls"><span>Unit 7, Parkwest Industrial Estate</span><span>Dublin 12, D12 P123, Ireland</span></div><a href="https://maps.google.com" class="cc-a" target="_blank">Get Directions →</a></div>
+        <div class="cc"><div class="cc-ico">📞</div><h3 class="cc-t">Phone</h3><div class="cc-ls"><span>+353 1 555 0123</span><span>Trade Line: +353 1 555 0124</span></div><a href="tel:+35315550123" class="cc-a">Call Now →</a></div>
+        <div class="cc"><div class="cc-ico">✉️</div><h3 class="cc-t">Email</h3><div class="cc-ls"><span>info@diamondmotorfactors.ie</span><span>trade@diamondmotorfactors.ie</span></div><a href="mailto:info@diamondmotorfactors.ie" class="cc-a">Send Email →</a></div>
+        <div class="cc"><div class="cc-ico">🕐</div><h3 class="cc-t">Opening Hours</h3><div class="cc-ls"><span>Mon–Fri: 8:00am – 6:00pm</span><span>Saturday: 9:00am – 4:00pm</span><span>Sunday: Closed</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container con-layout">
+    <!-- Form -->
+    <div class="con-form-wrap">
+      <div class="cfh">
+        <div class="stag">Send a Message</div>
+        <h2 class="st" style="font-size:clamp(24px,3.5vw,38px);margin:8px 0">Get In Touch</h2>
+        <p style="font-size:15px;color:var(--subtle);line-height:1.7">Fill in the form and we'll get back to you within one business hour.</p>
+      </div>
+      <div id="con-form-wrap">
+        <form class="cf" id="contact-form" onsubmit="submitContactForm(event)" novalidate>
+          <div class="f-row">
+            <div class="f-grp"><label class="f-lbl" for="cf-name">Full Name *</label><input id="cf-name" class="f-in" placeholder="Your full name"></div>
+            <div class="f-grp"><label class="f-lbl" for="cf-email">Email Address *</label><input id="cf-email" type="email" class="f-in" placeholder="your@email.com"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-grp"><label class="f-lbl" for="cf-phone">Phone Number</label><input id="cf-phone" type="tel" class="f-in" placeholder="+353 ..."></div>
+            <div class="f-grp"><label class="f-lbl" for="cf-type">Enquiry Type</label><div class="sel-w"><select id="cf-type" class="f-sel"><option value="">Select type...</option><option>General Enquiry</option><option>Part Request / Sourcing</option><option>Trade Account Application</option><option>Delivery / Order Query</option><option>Returns / Warranty</option><option>Other</option></select></div></div>
+          </div>
+          <div class="f-grp"><label class="f-lbl" for="cf-sub">Subject</label><input id="cf-sub" class="f-in" placeholder="Brief subject of your enquiry"></div>
+          <div class="f-grp"><label class="f-lbl" for="cf-msg">Message *</label><textarea id="cf-msg" class="f-ta" rows="6" placeholder="Tell us what you need, including vehicle details if relevant..."></textarea></div>
+          <button type="submit" class="btn btn-p" style="align-self:flex-start;padding:15px 30px">✉ Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="con-map-wrap">
+      <div>
+        <div class="stag">Visit Us</div>
+        <h2 class="st" style="font-size:clamp(22px,3vw,34px);margin:8px 0">Parkwest, Dublin 12</h2>
+      </div>
+      <div class="con-map">
+        <iframe title="Diamond Motor Factors" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.928!2d-6.3697!3d53.3367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sParkwest!5e0!3m2!1sen!2sie!4v1" width="100%" height="100%" style="border:0;filter:invert(90%) hue-rotate(180deg)" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="map-strip">
+        <div class="ms-i"><span class="ico">📍</span> Unit 7, Parkwest Industrial Estate, D12 P123</div>
+        <div class="ms-i"><span class="ico">🕐</span> Mon–Sat: 8am–6pm</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trade CTA -->
+  <div class="container" style="padding-bottom:80px">
+    <div class="trade-card">
+      <div class="trade-deco"></div>
+      <div class="trade-inner">
+        <div>
+          <div class="stag">For Garages & Mechanics</div>
+          <h2 class="st" style="font-size:clamp(24px,4vw,38px);margin:10px 0">Open a Trade Account Today</h2>
+          <p class="sub" style="font-size:15px">Get preferential pricing, monthly invoicing, a dedicated account manager, and priority access to stock. Apply in 5 minutes.</p>
+        </div>
+        <div class="trade-feats">
+          <div class="tf"><span class="ico">✅</span> Exclusive trade pricing</div>
+          <div class="tf"><span class="ico">✅</span> Monthly credit terms</div>
+          <div class="tf"><span class="ico">✅</span> Dedicated account manager</div>
+          <div class="tf"><span class="ico">✅</span> Priority stock access</div>
+          <div class="tf"><span class="ico">✅</span> Same-day delivery guarantee</div>
+        </div>
+        <button class="btn btn-p" onclick="document.getElementById('cf-type').value='Trade Account Application';document.getElementById('cf-name').focus()">Apply for Trade Account →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="ft-top">
+    <div class="container ft-grid">
+      <div>
+        <div class="ft-logo"><div class="ft-logo-ico">🔧</div><div><div class="ft-logo-n">Diamond</div><div class="ft-logo-s">Motor Factors</div></div></div>
+        <p class="ft-tag">Dublin's trusted source for quality car parts, tools, and accessories since 2005. Serving mechanics and drivers across the greater Dublin area.</p>
+        <div class="ft-social">
+          <a href="#" class="soc-b" aria-label="Facebook">f</a>
+          <a href="#" class="soc-b" aria-label="Instagram">ig</a>
+          <a href="#" class="soc-b" aria-label="Twitter">tw</a>
+          <a href="#" class="soc-b" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="ft-h">Quick Links</h3>
+        <ul class="ft-list">
+          <li><button class="ft-lnk" onclick="navigate('home')">Home</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Products</button></li>
+          <li><button class="ft-lnk" onclick="navigate('about')">About Us</button></li>
+          <li><button class="ft-lnk" onclick="navigate('contact')">Contact</button></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="ft-h">Categories</h3>
+        <ul class="ft-list">
+          <li><button class="ft-lnk" onclick="navigate('products')">Engine Parts</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Brakes & Pads</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Oils & Fluids</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Electrical</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Tools</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Accessories</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Suspension</button></li>
+          <li><button class="ft-lnk" onclick="navigate('products')">Exhaust</button></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="ft-h">Contact Us</h3>
+        <ul class="ft-con">
+          <li><span class="ico">📍</span> Unit 7, Parkwest Industrial Estate, Dublin 12, D12 P123</li>
+          <li><span class="ico">📞</span> <a href="tel:+35315550123">+353 1 555 0123</a></li>
+          <li><span class="ico">✉️</span> <a href="mailto:info@diamondmotorfactors.ie">info@diamondmotorfactors.ie</a></li>
+        </ul>
+        <h3 class="ft-h" style="margin-top:22px">Newsletter</h3>
+        <p class="nws-d">Get deals and part alerts in your inbox.</p>
+        <form class="nws-f" onsubmit="subscribeNewsletter(event)">
+          <input class="nws-i" type="email" id="nws-email" placeholder="your@email.com" required>
+          <button type="submit" class="nws-b">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <div class="container ft-bi">
+      <p class="ft-copy">© 2025 Diamond Motor Factors Ltd. All rights reserved. Dublin, Ireland.</p>
+      <div class="ft-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Returns Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── CART DRAWER ── -->
+<div id="cart-backdrop"></div>
+<aside id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-modal="true">
+  <div class="cd-hd">
+    <div class="cd-ht">🛒 <span>Your Cart</span> <span class="cd-cnt" id="cd-cnt" style="display:none">0</span></div>
+    <button class="cd-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cd-items" id="cd-items">
+    <div class="cd-empty"><div class="cd-eit">🛒</div><p style="color:var(--muted)">Your cart is empty</p><button class="btn btn-o btn-sm" onclick="closeCart();navigate('products')">Browse Products</button></div>
+  </div>
+  <div class="cd-ft" id="cd-footer" style="display:none">
+    <div class="cd-sub"><span>Subtotal</span><span class="cd-tot" id="cd-total">€0.00</span></div>
+    <div class="cd-note">Shipping calculated at checkout. Free over €75.</div>
+    <button class="btn btn-p cd-co" onclick="handleCheckout()">Proceed to Checkout →</button>
+    <button class="cd-cont" onclick="closeCart()">Continue Shopping</button>
+  </div>
+</aside>
+
+<!-- ── TOAST CONTAINER ── -->
+<div id="toast-container"></div>
+
+<script>
+// ══════════════════════════════════════════════════════════════
+// Diamond Motor Factors — Application JavaScript
+// ══════════════════════════════════════════════════════════════
+
+// ── PRODUCT DATA ──────────────────────────────────────────────
+const PRODUCTS = [
+  {id:1,cat:'engine',name:'Timing Belt Kit — Premium',brand:'Gates',price:89.99,old:119.99,badge:'Sale',bt:'r',rating:4.8,reviews:142,stock:true,desc:'Complete timing belt kit including belt, tensioner & water pump. Fits most European & Asian vehicles.',icon:'⚙️',color:'#3d0a0a'},
+  {id:2,cat:'engine',name:'Engine Air Filter — High Flow',brand:'Mann Filter',price:24.50,old:null,badge:'Best Seller',bt:'g',rating:4.9,reviews:308,stock:true,desc:'High-performance air filter for improved engine breathing. Universal fitment with adapter rings.',icon:'🔄',color:'#5c0a0a'},
+  {id:3,cat:'engine',name:'Cylinder Head Gasket Set',brand:'Victor Reinz',price:64.99,old:null,badge:null,bt:null,rating:4.7,reviews:89,stock:true,desc:'Complete head gasket set with all seals. MLS multi-layer steel construction for reliability.',icon:'⚙️',color:'#2a1010'},
+  {id:4,cat:'engine',name:'Spark Plugs Set (4x) — Iridium',brand:'NGK',price:39.99,old:54.99,badge:'Sale',bt:'r',rating:4.8,reviews:215,stock:true,desc:'Long-life iridium spark plugs for superior ignition performance and fuel economy.',icon:'⚡',color:'#7f1d1d'},
+  {id:5,cat:'brakes',name:'Front Brake Pads — Performance',brand:'Brembo',price:49.99,old:null,badge:'Top Rated',bt:'b',rating:4.9,reviews:427,stock:true,desc:'Premium Brembo brake pads with low dust formula. Excellent stopping power in all conditions.',icon:'🛑',color:'#991b1b'},
+  {id:6,cat:'brakes',name:'Brake Disc Set (2x) — Vented',brand:'DBA',price:74.99,old:99.99,badge:'Sale',bt:'r',rating:4.7,reviews:183,stock:true,desc:'Pair of vented brake discs for improved heat dissipation. OE-equivalent fitment.',icon:'⭕',color:'#1c1010'},
+  {id:7,cat:'brakes',name:'Brake Caliper — Rear Left',brand:'TRW',price:84.00,old:null,badge:null,bt:null,rating:4.6,reviews:67,stock:false,desc:'Remanufactured rear left brake caliper, fully tested and ready to fit.',icon:'🔧',color:'#4a0a0a'},
+  {id:8,cat:'brakes',name:'Brake Fluid DOT 4 — 1L',brand:'Castrol',price:12.99,old:null,badge:null,bt:null,rating:4.8,reviews:512,stock:true,desc:'High-performance DOT 4 brake fluid with high boiling point. 1 litre bottle.',icon:'🛢️',color:'#3d0a0a'},
+  {id:9,cat:'oils',name:'Engine Oil 5W-30 Fully Synthetic — 5L',brand:'Mobil 1',price:42.99,old:54.99,badge:'Best Seller',bt:'g',rating:4.9,reviews:1204,stock:true,desc:'Mobil 1 fully synthetic motor oil. Exceeds latest industry and OEM specs. 5 litre container.',icon:'🛢️',color:'#7f1a0a'},
+  {id:10,cat:'oils',name:'Coolant Antifreeze — 5L',brand:'Comma',price:18.50,old:null,badge:null,bt:null,rating:4.7,reviews:389,stock:true,desc:'Pre-mixed OAT coolant. Protects to -37°C. Suitable for all modern cooling systems.',icon:'🧊',color:'#6b0a0a'},
+  {id:11,cat:'oils',name:'Power Steering Fluid — 1L',brand:'Pentosin',price:14.99,old:null,badge:null,bt:null,rating:4.6,reviews:178,stock:true,desc:'Synthetic power steering fluid. Compatible with all modern hydraulic systems.',icon:'🔄',color:'#3d0a0a'},
+  {id:12,cat:'oils',name:'Gearbox Oil 75W-90 — 1L',brand:'Castrol',price:22.50,old:null,badge:null,bt:null,rating:4.7,reviews:145,stock:true,desc:'Full synthetic gearbox oil for smooth gear changes. Suitable for manual transmissions.',icon:'⚙️',color:'#2a1010'},
+  {id:13,cat:'electrical',name:'Car Battery 60Ah — Start-Stop',brand:'Varta',price:119.99,old:149.99,badge:'Sale',bt:'r',rating:4.8,reviews:298,stock:true,desc:'AGM battery designed for start-stop vehicles. High cranking power, long service life.',icon:'🔋',color:'#3d0a0a'},
+  {id:14,cat:'electrical',name:'Alternator — Remanufactured',brand:'Valeo',price:149.00,old:null,badge:null,bt:null,rating:4.5,reviews:112,stock:true,desc:'Fully remanufactured alternator, 120A output. Tested to OE specification.',icon:'⚡',color:'#7f1d1d'},
+  {id:15,cat:'electrical',name:'Starter Motor — Rebuilt',brand:'Bosch',price:99.99,old:129.99,badge:'Sale',bt:'r',rating:4.7,reviews:87,stock:false,desc:'Bosch remanufactured starter motor. Plug-and-play replacement, all voltages tested.',icon:'🔌',color:'#1c1010'},
+  {id:16,cat:'tools',name:'Socket Set 108pc — 1/4" & 1/2"',brand:'Draper',price:69.99,old:89.99,badge:'Popular',bt:'b',rating:4.8,reviews:534,stock:true,desc:'108-piece professional socket set in carry case. Chrome vanadium steel, metric & AF.',icon:'🔧',color:'#3d0a0a'},
+  {id:17,cat:'tools',name:'OBD2 Diagnostic Scanner',brand:'Autel',price:129.99,old:null,badge:'Top Rated',bt:'b',rating:4.9,reviews:721,stock:true,desc:'Professional OBD2 scanner reads and clears all fault codes. Works on all cars 2001+.',icon:'💻',color:'#4a0a0a'},
+  {id:18,cat:'tools',name:'Torque Wrench 1/2" — 40-210Nm',brand:'Sealey',price:44.99,old:null,badge:null,bt:null,rating:4.7,reviews:289,stock:true,desc:'Click-type torque wrench with reversible ratchet head. High-accuracy ±4%.',icon:'🔩',color:'#2a1010'},
+  {id:19,cat:'accessories',name:'Dash Cam 4K — Front & Rear',brand:'Viofo',price:159.99,old:199.99,badge:'Sale',bt:'r',rating:4.8,reviews:412,stock:true,desc:'4K front + 1080p rear dashcam with GPS, night vision, and parking mode.',icon:'📷',color:'#3d0a0a'},
+  {id:20,cat:'accessories',name:'Tyre Pressure Monitor (TPMS)',brand:'Autel',price:54.99,old:null,badge:null,bt:null,rating:4.6,reviews:198,stock:true,desc:'Wireless TPMS sensor kit. Real-time tyre pressure and temperature monitoring.',icon:'🔵',color:'#6b0a0a'},
+  {id:21,cat:'accessories',name:'Jump Starter Power Bank 2000A',brand:'NOCO',price:119.00,old:139.00,badge:'Best Seller',bt:'g',rating:4.9,reviews:867,stock:true,desc:'Ultra-safe lithium jump starter with 2000A peak current. Charges phones too.',icon:'⚡',color:'#7f1a0a'},
+  {id:22,cat:'suspension',name:'Shock Absorber Set — Front (2x)',brand:'Monroe',price:139.99,old:179.99,badge:'Sale',bt:'r',rating:4.7,reviews:234,stock:true,desc:'Monroe OESpectrum front shock absorbers. Pair with 3-year warranty.',icon:'🔩',color:'#1c1010'},
+  {id:23,cat:'suspension',name:'Control Arm with Ball Joint',brand:'Lemförder',price:74.99,old:null,badge:null,bt:null,rating:4.8,reviews:156,stock:true,desc:'Complete lower control arm assembly. OE quality German engineering.',icon:'🔗',color:'#2a1010'},
+  {id:24,cat:'exhaust',name:'Lambda O2 Sensor — Universal',brand:'Bosch',price:49.99,old:null,badge:null,bt:null,rating:4.7,reviews:312,stock:true,desc:'Universal wideband oxygen sensor. Reduces emissions and improves fuel economy.',icon:'📡',color:'#4a0a0a'},
+];
+
+const CATEGORIES = [
+  {id:'all',label:'All Products',icon:'🔧'},
+  {id:'engine',label:'Engine Parts',icon:'⚙️'},
+  {id:'brakes',label:'Brakes & Pads',icon:'🛑'},
+  {id:'oils',label:'Oils & Fluids',icon:'🛢️'},
+  {id:'electrical',label:'Electrical',icon:'⚡'},
+  {id:'tools',label:'Tools',icon:'🔨'},
+  {id:'accessories',label:'Accessories',icon:'🚗'},
+  {id:'suspension',label:'Suspension',icon:'🔩'},
+  {id:'exhaust',label:'Exhaust',icon:'💨'},
+];
+
+const FAQS = [
+  {q:'Do you offer same-day delivery in Dublin?',a:'Yes! Orders placed before 2pm Monday–Friday qualify for same-day delivery across greater Dublin. Delivery charge of €8.99 applies, or free on orders over €75.'},
+  {q:'How do I know a part will fit my vehicle?',a:'Use our "Request a Part" form or call us with your vehicle registration number. Our team will identify the exact OE part number and confirm fitment before you order.'},
+  {q:'Do you offer trade accounts for garages?',a:'Absolutely. We offer dedicated trade accounts with preferential pricing, monthly invoicing, and a dedicated account manager. Contact us or apply online to get started.'},
+  {q:'What is your returns policy?',a:'We accept returns within 30 days on unused parts in original packaging. Electrical items are non-returnable once fitted. All parts carry a minimum 2-year warranty against defects.'},
+  {q:'Can you source rare or hard-to-find parts?',a:'Yes — our "Request a Part" service connects you with our extensive supplier network. Most specialist parts can be sourced within 24–48 hours. Get in touch and we\'ll find it.'},
+  {q:'Do you sell to the public as well as trade?',a:'Definitely. We welcome both trade customers and members of the public. Walk-ins are welcome at our Dublin 12 warehouse Monday–Saturday 8am–6pm.'},
+];
+
+// ── STATE ──────────────────────────────────────────────────────
+let currentPage = 'home';
+let cart = [];
+let activeCategory = 'all';
+let inStockOnly = false;
+let cartOpen = false;
+
+// ── NAVIGATION ────────────────────────────────────────────────
+function navigate(page) {
+  // Hide all pages
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-a').forEach(a => a.classList.remove('active'));
+  document.querySelectorAll('.mob-a').forEach(a => a.classList.remove('active'));
+
+  // Show target
+  document.getElementById('page-' + page).classList.add('active');
+  document.getElementById('nl-' + page)?.classList.add('active');
+  document.getElementById('ml-' + page)?.classList.add('active');
+
+  currentPage = page;
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
+  // Close mobile menu
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('ham-btn').textContent = '☰';
+
+  // Page-specific init
+  if (page === 'products') { renderCategoryBtns(); filterProducts(); }
+  if (page === 'home') { renderFeatured(); renderFAQ(); }
+}
+
+// ── MOBILE MENU ───────────────────────────────────────────────
+function toggleMobile() {
+  const m = document.getElementById('mobile-menu');
+  const h = document.getElementById('ham-btn');
+  m.classList.toggle('open');
+  h.textContent = m.classList.contains('open') ? '✕' : '☰';
+}
+
+// ── SCROLL EFFECT ─────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// ── RENDER PRODUCT CARD ───────────────────────────────────────
+function renderCard(p) {
+  const savings = p.old ? Math.round(((p.old - p.price) / p.old) * 100) : 0;
+  const badgeClass = {r:'badge-r', g:'badge-g', b:'badge-b'}[p.bt] || 'badge-b';
+  const stars = [1,2,3,4,5].map(i =>
+    `<span class="star ${i <= Math.round(p.rating) ? 'on' : 'off'}">★</span>`
+  ).join('');
+
+  return `
+    <div class="prod-card">
+      <div class="prod-img" style="background:linear-gradient(135deg,${p.color}33,${p.color}11)">
+        <div class="prod-ico">${p.icon}</div>
+        ${p.badge ? `<div class="prod-bps"><span class="badge ${badgeClass}">${p.badge}</span></div>` : ''}
+        ${savings ? `<div class="prod-bdis"><span class="badge badge-r">−${savings}%</span></div>` : ''}
+        ${!p.stock ? `<div class="oos-overlay">Out of Stock</div>` : ''}
+      </div>
+      <div class="prod-body">
+        <div class="prod-brand">${p.brand}</div>
+        <h3 class="prod-name">${p.name}</h3>
+        <p class="prod-desc">${p.desc}</p>
+        <div class="prod-stars">
+          <div class="stars">${stars}</div>
+          <span class="rv">${p.rating}</span>
+          <span class="rc">(${p.reviews})</span>
+        </div>
+        <div class="prod-foot">
+          <div>
+            <span class="pc">€${p.price.toFixed(2)}</span>
+            ${p.old ? `<span class="po">€${p.old.toFixed(2)}</span>` : ''}
+          </div>
+          <button class="btn btn-p btn-sm" onclick="${p.stock ? `addToCart(${p.id})` : 'void(0)'}" ${!p.stock ? 'disabled style="opacity:.45;cursor:not-allowed"' : ''}>
+            ${p.stock ? '🛒 Add' : '⛔ N/A'}
+          </button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ── HOME: FEATURED PRODUCTS ───────────────────────────────────
+function renderFeatured() {
+  const featured = PRODUCTS.filter(p => p.stock && p.rating >= 4.8).slice(0, 8);
+  document.getElementById('featured-grid').innerHTML = featured.map(renderCard).join('');
+}
+
+// ── HOME: FAQ ─────────────────────────────────────────────────
+function renderFAQ() {
+  const el = document.getElementById('faq-list');
+  el.innerHTML = FAQS.map((f, i) => `
+    <div class="faq-item" id="faq-${i}">
+      <button class="faq-q" onclick="toggleFAQ(${i})">
+        <span>${f.q}</span>
+        <span class="faq-icon">▾</span>
+      </button>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>`).join('');
+}
+
+function toggleFAQ(i) {
+  const item = document.getElementById('faq-' + i);
+  item.classList.toggle('open');
+}
+
+// ── PRODUCTS PAGE ─────────────────────────────────────────────
+function renderCategoryBtns() {
+  const el = document.getElementById('cat-btns');
+  el.innerHTML = CATEGORIES.map(c => {
+    const count = c.id === 'all' ? PRODUCTS.length : PRODUCTS.filter(p => p.cat === c.id).length;
+    return `<button class="cat-b ${activeCategory === c.id ? 'active' : ''}" onclick="setCat('${c.id}')">
+      <span class="cat-b-ico">${c.icon}</span>
+      <span>${c.label}</span>
+      <span class="cat-b-cnt">${count}</span>
+    </button>`;
+  }).join('');
+}
+
+function setCat(cat) {
+  activeCategory = cat;
+  renderCategoryBtns();
+  filterProducts();
+  if (window.innerWidth <= 1024) closeSidebar();
+}
+
+function toggleInStock() {
+  inStockOnly = !inStockOnly;
+  document.getElementById('stock-tgl').classList.toggle('on', inStockOnly);
+  filterProducts();
+}
+
+function filterProducts() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const sort = document.getElementById('sort-sel').value;
+
+  let list = [...PRODUCTS];
+  if (q) list = list.filter(p =>
+    p.name.toLowerCase().includes(q) ||
+    p.brand.toLowerCase().includes(q) ||
+    p.desc.toLowerCase().includes(q) ||
+    p.cat.toLowerCase().includes(q)
+  );
+  if (activeCategory !== 'all') list = list.filter(p => p.cat === activeCategory);
+  if (inStockOnly) list = list.filter(p => p.stock);
+
+  switch(sort) {
+    case 'price-asc':  list.sort((a,b) => a.price - b.price); break;
+    case 'price-desc': list.sort((a,b) => b.price - a.price); break;
+    case 'rating':     list.sort((a,b) => b.rating - a.rating); break;
+    case 'name':       list.sort((a,b) => a.name.localeCompare(b.name)); break;
+  }
+
+  const grid = document.getElementById('products-grid');
+  document.getElementById('result-count').textContent = `${list.length} result${list.length !== 1 ? 's' : ''}`;
+
+  if (list.length === 0) {
+    grid.innerHTML = `<div class="no-res" style="grid-column:1/-1"><div class="no-res-ico">🔍</div><h3>No parts found</h3><p>Try a different search term or browse another category.</p><button class="btn btn-o btn-sm" onclick="clearFilters()">Clear All Filters</button></div>`;
+  } else {
+    grid.innerHTML = list.map(renderCard).join('');
+  }
+
+  // Chips
+  const hasFilters = q || activeCategory !== 'all' || inStockOnly;
+  const chips = document.getElementById('chips');
+  document.getElementById('sb-clear-btn').style.display = hasFilters ? '' : 'none';
+  document.getElementById('fa-dot').style.display = hasFilters ? '' : 'none';
+
+  let chipsHtml = '';
+  if (activeCategory !== 'all') {
+    const cat = CATEGORIES.find(c => c.id === activeCategory);
+    chipsHtml += `<span class="chip">${cat.label} <button onclick="setCat('all')">✕</button></span>`;
+  }
+  if (inStockOnly) chipsHtml += `<span class="chip">In Stock Only <button onclick="toggleInStock()">✕</button></span>`;
+  if (q) chipsHtml += `<span class="chip">"${q}" <button onclick="clearSearch()">✕</button></span>`;
+  chips.innerHTML = chipsHtml;
+
+  // Search clear btn
+  document.getElementById('srch-clr').style.display = q ? '' : 'none';
+}
+
+function clearSearch() {
+  document.getElementById('search-input').value = '';
+  document.getElementById('srch-clr').style.display = 'none';
+  filterProducts();
+}
+
+function clearFilters() {
+  activeCategory = 'all';
+  inStockOnly = false;
+  document.getElementById('stock-tgl').classList.remove('on');
+  document.getElementById('search-input').value = '';
+  renderCategoryBtns();
+  filterProducts();
+}
+
+function openSidebar() {
+  document.getElementById('pp-sidebar').classList.add('open');
+  document.getElementById('sb-backdrop').style.display = '';
+}
+function closeSidebar() {
+  document.getElementById('pp-sidebar').classList.remove('open');
+  document.getElementById('sb-backdrop').style.display = 'none';
+}
+
+// ── CART ──────────────────────────────────────────────────────
+function addToCart(id) {
+  const product = PRODUCTS.find(p => p.id === id);
+  if (!product) return;
+  const existing = cart.find(i => i.id === id);
+  if (existing) {
+    existing.qty++;
+  } else {
+    cart.push({...product, qty: 1});
+  }
+  updateCartUI();
+  openCart();
+  showToast(`${product.name} added to cart`, 'success');
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(i => i.id !== id);
+  updateCartUI();
+}
+
+function updateQty(id, delta) {
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty < 1) removeFromCart(id);
+  else updateCartUI();
+}
+
+function updateCartUI() {
+  const count = cart.reduce((s, i) => s + i.qty, 0);
+  const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+  const countEl = document.getElementById('cart-count');
+  const cdCnt = document.getElementById('cd-cnt');
+  if (count > 0) {
+    countEl.style.display = '';
+    countEl.textContent = count;
+    cdCnt.style.display = '';
+    cdCnt.textContent = count;
+  } else {
+    countEl.style.display = 'none';
+    cdCnt.style.display = 'none';
+  }
+
+  const itemsEl = document.getElementById('cd-items');
+  const footerEl = document.getElementById('cd-footer');
+
+  if (cart.length === 0) {
+    itemsEl.innerHTML = `<div class="cd-empty"><div class="cd-eit">🛒</div><p style="color:var(--muted)">Your cart is empty</p><button class="btn btn-o btn-sm" onclick="closeCart();navigate('products')">Browse Products</button></div>`;
+    footerEl.style.display = 'none';
+  } else {
+    itemsEl.innerHTML = cart.map(item => `
+      <div class="cd-item">
+        <div class="cd-iimg" style="background:linear-gradient(135deg,${item.color}33,${item.color}11)">${item.icon}</div>
+        <div class="cd-iinfo">
+          <div class="cd-ibrand">${item.brand}</div>
+          <div class="cd-iname">${item.name}</div>
+          <div class="cd-iprice">€${(item.price * item.qty).toFixed(2)}</div>
+          <div class="cd-ctrl">
+            <button class="qty-b" onclick="updateQty(${item.id},-1)">−</button>
+            <span class="qv">${item.qty}</span>
+            <button class="qty-b" onclick="updateQty(${item.id},1)">+</button>
+            <button class="cd-rm" onclick="removeFromCart(${item.id})">🗑</button>
+          </div>
+        </div>
+      </div>`).join('');
+    document.getElementById('cd-total').textContent = `€${total.toFixed(2)}`;
+    footerEl.style.display = '';
+  }
+}
+
+function openCart() {
+  cartOpen = true;
+  document.getElementById('cart-drawer').classList.add('open');
+  document.getElementById('cart-backdrop').classList.add('open');
+}
+function closeCart() {
+  cartOpen = false;
+  document.getElementById('cart-drawer').classList.remove('open');
+  document.getElementById('cart-backdrop').classList.remove('open');
+}
+
+document.getElementById('cart-toggle').addEventListener('click', () => {
+  cartOpen ? closeCart() : openCart();
+});
+document.getElementById('cart-backdrop').addEventListener('click', closeCart);
+
+function handleCheckout() {
+  showToast('Checkout coming soon! Call us to place your order: +353 1 555 0123', 'info');
+}
+
+// ── TOAST ────────────────────────────────────────────────────
+function showToast(msg, type='info') {
+  const container = document.getElementById('toast-container');
+  const toast = document.createElement('div');
+  const icons = {success:'✅', error:'❌', info:'ℹ️'};
+  toast.className = `toast toast-${type[0]}`;
+  toast.innerHTML = `<span>${icons[type]||'ℹ️'}</span><span>${msg}</span>`;
+  toast.style.pointerEvents = 'auto';
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity .3s';
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+// ── FORMS ────────────────────────────────────────────────────
+function submitReqForm(e) {
+  e.preventDefault();
+  document.getElementById('req-form-wrap').innerHTML = `
+    <div class="req-success">
+      <div class="sico">✅</div>
+      <h3>Request Received!</h3>
+      <p>We'll call you shortly with availability and pricing.</p>
+    </div>`;
+  showToast("Part request received! We'll call you shortly.", 'success');
+}
+
+function submitContactForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('cf-name').value.trim();
+  const email = document.getElementById('cf-email').value.trim();
+  const msg = document.getElementById('cf-msg').value.trim();
+
+  document.getElementById('cf-name').classList.remove('err');
+  document.getElementById('cf-email').classList.remove('err');
+  document.getElementById('cf-msg').classList.remove('err');
+
+  let valid = true;
+  if (!name) { document.getElementById('cf-name').classList.add('err'); valid = false; }
+  if (!email || !/\S+@\S+\.\S+/.test(email)) { document.getElementById('cf-email').classList.add('err'); valid = false; }
+  if (!msg) { document.getElementById('cf-msg').classList.add('err'); valid = false; }
+  if (!valid) { showToast('Please fill in all required fields.', 'error'); return; }
+
+  document.getElementById('con-form-wrap').innerHTML = `
+    <div class="con-success">
+      <div class="con-sico">✅</div>
+      <h3>Message Sent!</h3>
+      <p>Thanks, ${name.split(' ')[0]}! We've received your message and will reply to <strong>${email}</strong> within one business hour.</p>
+      <button class="btn btn-o btn-sm" onclick="resetContactForm()">Send Another Message</button>
+    </div>`;
+  showToast("Message sent! We'll be in touch soon.", 'success');
+}
+
+function resetContactForm() {
+  document.getElementById('con-form-wrap').innerHTML = `
+    <form class="cf" id="contact-form" onsubmit="submitContactForm(event)" novalidate>
+      <div class="f-row">
+        <div class="f-grp"><label class="f-lbl" for="cf-name">Full Name *</label><input id="cf-name" class="f-in" placeholder="Your full name"></div>
+        <div class="f-grp"><label class="f-lbl" for="cf-email">Email Address *</label><input id="cf-email" type="email" class="f-in" placeholder="your@email.com"></div>
+      </div>
+      <div class="f-row">
+        <div class="f-grp"><label class="f-lbl" for="cf-phone">Phone Number</label><input id="cf-phone" type="tel" class="f-in" placeholder="+353 ..."></div>
+        <div class="f-grp"><label class="f-lbl" for="cf-type">Enquiry Type</label><div class="sel-w"><select id="cf-type" class="f-sel"><option value="">Select type...</option><option>General Enquiry</option><option>Part Request / Sourcing</option><option>Trade Account Application</option><option>Delivery / Order Query</option><option>Returns / Warranty</option><option>Other</option></select></div></div>
+      </div>
+      <div class="f-grp"><label class="f-lbl" for="cf-sub">Subject</label><input id="cf-sub" class="f-in" placeholder="Brief subject of your enquiry"></div>
+      <div class="f-grp"><label class="f-lbl" for="cf-msg">Message *</label><textarea id="cf-msg" class="f-ta" rows="6" placeholder="Tell us what you need, including vehicle details if relevant..."></textarea></div>
+      <button type="submit" class="btn btn-p" style="align-self:flex-start;padding:15px 30px">✉ Send Message</button>
+    </form>`;
+}
+
+function subscribeNewsletter(e) {
+  e.preventDefault();
+  const email = document.getElementById('nws-email').value;
+  if (email) {
+    showToast("Thanks! You're subscribed to our newsletter.", 'success');
+    document.getElementById('nws-email').value = '';
+  }
+}
+
+// ── INIT ──────────────────────────────────────────────────────
+navigate('home');
+</script>
+</body>
+</html>
